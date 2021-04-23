@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body {
+            background-image: url("/bgimage.jpg");
+            background-repeat: no-repeat;
+            /* background-color: aquamarine; */
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+  margin: 0;
+            /* height: 500px; */
+            /* background-attachment: fixed; */
+        }
+
+        .container {
+            margin-top: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            width: 50%;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+        }
+
+        .email {
+            border-radius: 2px;
+            border: 1px solid black;
+            margin-right: 20px;
+            height: 30px;
+            width: auto;
+            /* border-collapse: collapse; */
+        }
+
+        #emaillabel {
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            float: left;
+            margin-top: 1px;
+            margin-right: 1px;
+            margin-left: 1px;
+            /* padding-top: 7px; */
+            padding: 4px;
+            width: 10%;
+            /* margin: 4px; */
+            border: 1px solid black;
+
+
+        }
+
+        #emailinput {
+            font-weight: bold;
+            margin-top: 1px;
+            margin-right: 1px;
+            margin-left: 1px;
+            padding: 4px;
+            border-radius: 1px;
+            width: 86%;
+
+        }
+
+        .name {
+            border: 1px solid black;
+            margin-top: 5px;
+            border-radius: 2px;
+            margin-right: 20px;
+            height: 30px;
+            width: auto;
+        }
+
+        #namelabel {
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            float: left;
+            margin-top: 1px;
+            margin-right: 1px;
+            margin-left: 1px;
+            /* padding-top: 7px; */
+            padding: 4px;
+            width: 10%;
+            /* margin: 4px; */
+            border: 1px solid black;
+
+        }
+
+        .nameinput {
+            font-weight: bold;
+            margin-top: 1px;
+            margin-right: 1px;
+            margin-left: 1px;
+            padding: 4px;
+            border-radius: 1px;
+            width: 86%;
+        }
+
+        .country {
+            margin-top: 3px;
+            border-radius: 2px;
+            border: 1px solid black;
+            margin-right: 20px;
+            height: 30px;
+            width: auto;
+            /* border-collapse: collapse; */
+        }
+
+        .country1 {
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            float: left;
+            margin-top: 1px;
+            margin-right: 1px;
+            margin-left: 1px;
+            /* padding-top: 7px; */
+            padding: 4px;
+            width: 10%;
+            /* margin: 4px; */
+            border: 1px solid black;
+
+        }
+
+        .countryin {
+            margin-left: 12%;
+            border: 1px solid black;
+            margin-top: .75px;
+            margin-right: 1px;
+            /* margin-left: 1px; */
+            margin-bottom: 1px;
+            padding: 3.9px;
+            border-radius: 2px;
+            width: 86.5%;
+
+        }
+
+        .countryin2 {
+            margin-left: 12%;
+            border: 1px solid black;
+            /* margin-right: 1px; */
+            margin-top: 1px;
+            /* margin-left: 1px; */
+            margin-bottom: 1px;
+            padding: 3.2px;
+            border-radius: 2px;
+            width: 86.5%;
+        }
+
+        .website {
+            height: 100px;
+            border: 1px solid black;
+            margin-right: 20px;
+            margin-top: 4px;
+        }
+
+        .webin {
+            border-radius: 2px;
+            margin: 1px;
+            width: 11.5%;
+            height: 96px;
+            border: 1px solid black;
+            float: left;
+            text-align: left;
+
+        }
+
+        #webp {
+            margin-left: 2px;
+            padding-top: 20px;
+        }
+
+        .scrollable {
+            border-radius: 2px;
+            padding-left: 5px;
+            margin: 1px;
+            border: 1px solid black;
+            height: 95.9px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        .address {
+            margin-right: 20px;
+            margin-top: 4px;
+            border-radius: 2px;
+            height: 60px;
+            border: 1px solid black;
+        }
+
+        .texta {
+
+            margin-left: 12.2%;
+            /* border: 1px solid black; */
+            height: 55px;
+        }
+
+        .textf {
+            font-weight: bold;
+            margin: 1px;
+            height: 51px;
+            width: 98.7%;
+        }
+
+        .remaining {
+            border: 1px solid black;
+            margin-top: 4px;
+            margin-right: 20px;
+            height: 30px;
+        }
+
+        .remain {
+            margin: 1px;
+            float: left;
+            width: 11.5%;
+            border: 1px solid black;
+            height: 26px;
+            border-radius: 2px;
+        }
+
+        .remainin {
+            margin-left: 12.4%;
+            border: 1px solid black;
+            /* margin-right: 1px; */
+            margin-top: 1px;
+            /* margin-left: 1px; */
+            /* margin-bottom: 1px; */
+            padding: 3.5px;
+            border-radius: 1px;
+            width: 86%;
+
+            /* padding: 1px;
+            height: 25px;
+            margin-left: 12.2%;
+            width: 87%;
+            border: 1px solid black; */
+        }
+
+        .empty {
+            border: 1px solid black;
+            margin-top: 5px;
+            border-radius: 2px;
+            margin-right: 20px;
+            height: 30px;
+            width: auto;
+        }
+
+        .buttons {
+            margin-top: 4px;
+            border: 1px solid black;
+            height: 30px;
+            margin-right: 20px;
+        }
+
+        .btnin {
+            margin-left: 12.4%;
+            border: 1px solid black;
+            margin-top: .75px;
+            margin-right: 1px;
+            /* margin-left: 1px; */
+            /* margin-bottom: 1px; */
+            height: 25px;
+            border-radius: 2px;
+            width: 86/5%;
+            /* margin-top: 1px; */
+            /* height: 24px;
+            margin-left: 12.4%;
+            border:1px solid black;
+            width: 86.7%; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div style="text-align:center; background-color: rgb(97, 64, 64) ; color: white; height: 50px; ">
+            <h2 style="padding-top: 10px;">My Registration Form
+            </h2>
+        </div>
+        <div class="container">
+            <!-- <img src="/bgimage.jpg" style="height: 500px; width: 90%;" alt=""> -->
+            <form action="">
+
+                <div class="email">
+                    <label id="emaillabel" stylefor="em">Email:</label> <input id="emailinput" type="Email"
+                        name="emailID" id="em" placeholder="Enter email">
+
+                </div>
+                <div class="name">
+                    <label id="namelabel" for="name">Name:</label><input class="nameinput" type="text" name="name"
+                        id="name" placeholder="Enter name ">
+
+                </div>
+                <div class="country">
+                    <label class="country1" for="">Country:</label>
+
+                    <div class="countryin">
+                        <label style="background-color: rgb(97, 64, 64) ;color: white;" for="value">Choose country:</label>
+                        <select name="select" id="value">Selecet value
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <label style="background-color: rgb(97, 64, 64) ;color: white;" for="cityn">Choose city:</label>
+                        <select name="city" id="cityn">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="country">
+                    <label class="country1" for="">Answer:</label>
+                    <div class="countryin2">
+                        <input type="radio" name="answer">Red <input type="radio" name="answer">Gray <input type="radio"
+                            name="answer">Blue
+                    </div>
+
+                </div>
+                <div class="country">
+                    <label class="country1" for="">Preference:</label>
+                    <div class="countryin2">
+                        <input type="radio" name="prefrence">Sports <input type="radio" name="prefrence">Politics <input
+                            type="radio" name="prefrence">Business
+                    </div>
+                </div>
+
+                <div class="website">
+                    <label class="webin" for="web" style="background-color: black ;color: white;">
+                        <p id="webp">website:</p>
+                    </label>
+                    <div class="scrollable" id="web">
+                        <div> Dig</div>
+                        <div>Facebook </div>
+                        <div>Watsapp</div>
+                        <div>Twitter</div>
+                        <div>goole</div>
+                        <div>workout</div>
+                    </div>
+                </div>
+                <div class="address">
+                    <label style="float: left; height: 56px; border: 1px solid black; margin: 1px; width: 11.5%; text-align: left; background-color: black;
+                    color: white;" for="address">
+                        <p style="margin-left: 4px;">Address:</p>
+                    </label>
+                    <div class="texta">
+                        <textarea class="textf" name="Textarea" placeholder="Enter your Address"
+                            id="address"></textarea>
+                    </div>
+                </div>
+                <div class="remaining">
+                    <!-- <label class="remain" for=""></label> -->
+                    <div class="remain" style="background-color: black ;color: white;"></div>
+                    <div class="remainin">
+                        Remaining characters: 20
+                    </div>
+                </div>
+                <div class="empty">
+                    <div class="remain" style="background-color: black ;color: white;"></div>
+                    <div class="remainin" style="height: 19px;">
+                    </div>
+
+                </div>
+                <div class="buttons">
+                    <div class="remain" style="background-color: black ;color: white;"></div>
+                    <div class="btnin">
+                        <input style="height: 25px;" type="button" name="Save" value="Save"> <input
+                            style="height: 25px; margin-left: 1%;" type="button" name="reset" value="Reset">
+                    </div>
+                </div>
+                <div class="empty">
+                    <div class="remain" style="background-color: black ;color: white;"></div>
+                    <div class="remainin" style="height: 19px;">
+                    </div>
+
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
